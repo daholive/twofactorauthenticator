@@ -12,6 +12,10 @@ Foi utilizado neste experimento a biblioteca javascript chamada otplib:
  - **é uma biblioteca JavaScript One Time Password (OTP)**
  - **é compatível com o Google Authenticator e inclui métodos adicionais para permitir que você trabalhe com o Google Authenticator.**
  - **é um pacote que pode ser instalado via NPM e usado com Node.js**
+ 
+### Como funciona? ###
+
+
 
 ### Utilização via browser ###
 
@@ -162,3 +166,21 @@ a serem utilizados pela página a ser exibida no navegador:
 QRCode.js suporta Cross-browser com HTML5 Canvas e table tag no DOM. QRCode.js não tem dependências.
 
     <script src="js/qrcode.min.js"></script>
+    
+    
+ ### Alguns projetos alternativos que trabalham com a geração e validação de chaves do Google Authenticator ###
+ - **PHP Sonata Project**
+ 
+        https://packagist.org/packages/sonata-project/google-authenticator 
+        
+ - **Node Speakeasy**
+ 
+        https://github.com/speakeasyjs/speakeasy 
+        
+ - **Java GoogleAuth**
+        
+        https://github.com/wstrange/GoogleAuth
+
+- **Java Spring Two Factor Auth**
+
+        https://www.baeldung.com/spring-security-two-factor-authentication-with-soft-token
