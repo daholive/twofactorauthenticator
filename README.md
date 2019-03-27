@@ -20,3 +20,15 @@ Existe uma versão compilada para ser usada direta com o navegador. É necessár
     <script src="lib/otplib-browserff2d.js"></script>
 
 Você pode encontrá-lo em node_modules/otplib depois de instalar.
+
+Além desta lib OTBLIB foi implementado neste experimento o seguinte arquivo javascript:
+
+    <script src="js/appff2d.js"></script>
+    
+```javascript
+public class Person
+{
+    public ObjectId Id { get; set; }
+    public string Name { get; set; }
+}
+```
