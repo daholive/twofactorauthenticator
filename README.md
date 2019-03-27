@@ -16,7 +16,10 @@ Foi utilizado neste experimento a biblioteca javascript chamada otplib:
 ### Como funciona? ###
 
 Ao acessar o **index.html** será exibido a tela abaixo, com um chave gerada e o QR Code que ela representa. A cada "refresh" dado na tela uma nova chave é gerada.
-![alt text](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela1.png)
+![Chave e QR Code](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela1.png)
+
+Na tela seguinte, é exibido um token gerado também automaticamente e com um tempo de duração que pode ser configurado.
+![Token gerado automaticamente](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela2.png)
 
 
 ### Utilização via browser ###
