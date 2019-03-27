@@ -58,7 +58,7 @@ a serem utilizados pela página a ser exibida no navegador:
     secret = otplib.authenticator.generateSecret();
 
     startCountdown();
-
+    // otplib.authenticator.keyuri(@user, @service, @secret);
     // @user - id cliente configurado no Google APIs
     // @service - nome do serviço configurado no Google APIs
     // @secret - chave gerada para a aplicação criada no Google APIs
@@ -119,7 +119,7 @@ a serem utilizados pela página a ser exibida no navegador:
       .querySelector('.otp-verify-send')
       .addEventListener('click', function() {
         var inputValue = document.querySelector('.otp-verify-input').value;
-        
+
         // verifica o token fornecido em relação ao token gerado
         var delta = otplib.authenticator.checkDelta(inputValue, secret);
 
