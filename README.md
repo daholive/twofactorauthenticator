@@ -18,3 +18,5 @@ Foi utilizado neste experimento a biblioteca javascript chamada otplib:
 Existe uma versão compilada para ser usada direta com o navegador. É necessário adicionar o seguinte script ao seu código:
 
     <script src="lib/otplib-browserff2d.js"></script>
+
+Você pode encontrá-lo em node_modules/otplib depois de instalar.
