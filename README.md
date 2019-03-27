@@ -157,7 +157,7 @@ a serem utilizados pela página a ser exibida no navegador:
 ```
 
 
-### Bilioteca utilizada para gerar e exibir o QR Code ###
+### Biblioteca utilizada para gerar e exibir o QR Code ###
 
 QRCode.js suporta Cross-browser com HTML5 Canvas e table tag no DOM. QRCode.js não tem dependências.
 
