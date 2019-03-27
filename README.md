@@ -27,6 +27,18 @@ Na última tela, é feita a validação do Token. A cada validação, uma "flag"
 
 ![Validação do Token](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela3.png)
 
+Quando um token é válido, é exibido a "flag" **window:0** que significa que o token é válido.
+
+![status token validado](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela4.png)
+
+Quando é o token anterior ao atual, é exibido a "flag" **window:-1** que significa que o token é válido.
+
+![status token anterior](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela6.png)
+
+Quando o token já foi utilizado e não é mais válido, é exibido a "flag" **Cannot verify token** que significa que o token é válido.
+
+![status token inválido](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela5.png)
+
 
 ### Utilização via browser ###
 
