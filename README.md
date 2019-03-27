@@ -26,7 +26,7 @@ Além desta lib OTBLIB foi implementado neste experimento o seguinte arquivo jav
     <script src="js/appff2d.js"></script>
     
 Este javascript é constituído por uma função imediata que carrega a lib OTBLIB e atribui configurações e métodos
-a serem utilizados pela página a ser exibida no navegado.:
+a serem utilizados pela página a ser exibida no navegador:
     
 ```javascript
 (function() {
