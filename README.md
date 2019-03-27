@@ -39,6 +39,10 @@ Quando o token já foi utilizado e não é mais válido, é exibido a "flag" **C
 
 ![status token inválido](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela5.png)
 
+E por último é possível através do App Google Authenticator fazer a leitura do QR Code gerado e criar um novo token. Este mesmo token pode ser validado  na tela anterior de validação. Neste caso será retornado a "flag" **window:1** que significa que é um token futuro, ou seja, que pode ser utilizado assim que o token atual expirar.
+
+![google authenticator](https://github.com/daholive/twofactorauthenticator/blob/master/docs/google_authenticator.png)
+
 
 ### Utilização via browser ###
 
