@@ -169,7 +169,7 @@ QRCode.js suporta Cross-browser com HTML5 Canvas e table tag no DOM. QRCode.js n
  
         https://packagist.org/packages/sonata-project/google-authenticator 
         
- - **Speakeasy**
+ - **Node Speakeasy**
  
         https://github.com/speakeasyjs/speakeasy 
         
