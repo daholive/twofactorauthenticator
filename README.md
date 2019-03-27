@@ -7,3 +7,5 @@ A verificação em duas etapas oferece maior segurança para a sua Conta do Goog
 Foi utilizado neste experimento a biblioteca javascript chamada otplib:
 
     https://yeojz.github.io/otplib/docs/index.html
+
+ - **Por que usar a lib OTBLIB ?**
