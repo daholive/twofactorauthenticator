@@ -8,7 +8,7 @@ Foi utilizado neste experimento a biblioteca javascript chamada otplib:
 
     https://yeojz.github.io/otplib/docs/index.html
 
-###Por que usar a lib OTBLIB? ###
+### Por que usar a lib OTBLIB? ###
  - **é uma biblioteca JavaScript One Time Password (OTP)**
  - **é compatível com o Google Authenticator e inclui métodos adicionais para permitir que você trabalhe com o Google Authenticator.**
  - **é um pacote que pode ser instalado via NPM e usado via Node.js**
