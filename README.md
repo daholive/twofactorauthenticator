@@ -31,7 +31,7 @@ Quando um token é válido, é exibido a "flag" **window:0** que significa que o
 
 ![status token validado](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela4.png)
 
-Quando é o token anterior ao atual, é exibido a "flag" **window:-1** que significa que o token é válido.
+Quando é o token anterior ao atual, é exibido a "flag" **window:-1** que significa que o token já foi utilizado anteriormente.
 
 ![status token anterior](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela6.png)
 
