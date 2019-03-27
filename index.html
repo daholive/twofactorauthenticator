@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="otplib.png" />
+    <meta property="og:title" content="OTP for JavaScript | otplib" />
+    <meta property="og:description" content="JavaScript One Time Password library using HOTP / TOTP / Google Authenticator" />
+    <meta property="og:url" content="https://yeojz.github.io/otplib">
+    <meta name="keywords" content="otplib" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Two-factor authentication</title>
+  </head>
+  <body>
+    <div id="root columns">
+      <div class='site-constraint'>
+
+        <section class="tabs">
+          <ul>
+            <li class="tab-item is-active" data-tab-id='secret'>
+              <a>
+                <span class="icon is-small" data-tab-id='secret'><i class="fa fa-user-secret"></i></span>
+                Chave gerada
+              </a>
+            </li>
+            <li class="tab-item" data-tab-id='token'>
+              <a>
+                <span class="icon is-small" data-tab-id='token'><i class="fa fa-key"></i></span>
+                Token gerado
+              </a>
+            </li>
+            <li class="tab-item" data-tab-id='verify'>
+              <a>
+                <span class="icon is-small" data-tab-id='verify'><i class="fa fa-eye"></i></span>
+                Validar
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class='tab-contents'>
+          <article class='tab-item secret is-active'>
+            <h3>Chave</h3>
+            <pre><code class="otp-secret bash"></code></pre>
+
+            <div class="otp-qrcode">
+              <h3>QR Code</h3>
+              <div class="qrcode"></div>
+              <p>
+                Digitalize esta imagem com o Google Authenticator ou outro aplicativo de autenticação de dois fatores.
+              </p>
+            </div>
+          </article>
+          <article class='tab-item token'>
+            <div>Próximo Token em: <span class="otp-countdown"></span></div>
+            <pre><code class="otp-token"></code></pre>
+
+          </article>
+          <article class='tab-item verify'>
+            <div class="otp-verify">
+              <input
+                class="otp-verify-input"
+                placeholder="000000"
+                maxlength="6"
+                value="" />
+              <button class="button otp-verify-send">Validar</button>
+              <div class="otp-verify-result">
+                <i class='fa'></i>
+                <span class='text'></span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/qrcode.min.js"></script>
+    <script src="lib/otplib-browserff2d.js?v11.0.0"></script>
+    <script src="js/appff2d.js?v11.0.0"></script>
+  </body>
+
+</html>
