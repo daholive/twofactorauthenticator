@@ -162,3 +162,10 @@ a serem utilizados pela página a ser exibida no navegador:
 QRCode.js suporta Cross-browser com HTML5 Canvas e table tag no DOM. QRCode.js não tem dependências.
 
     <script src="js/qrcode.min.js"></script>
+    
+    
+ ### Alguns projetos alternativos que trabalham com a geração e validação de chaves do Google Authenticator ###
+ - ** PHP Sonata Project **
+ 
+        https://packagist.org/packages/sonata-project/google-authenticator 
+
