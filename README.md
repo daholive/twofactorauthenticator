@@ -54,14 +54,22 @@ a serem utilizados pela página a ser exibida no navegador:
   }
 
   function createSecret() {
+    // método para gerar automaticamente as chaves
     secret = otplib.authenticator.generateSecret();
 
     startCountdown();
 
+    // @user - id cliente configurado no Google APIs
+    // @service - nome do serviço configurado no Google APIs
+    // @secret - chave gerada para a aplicação criada no Google APIs
+    //
+    // após receber a chave, o método keyuri gera uma URL com o protocolo otpauth
+    // para assim gerar um novo QR CODE
     var otpauth = otplib.authenticator.keyuri('demo', 'otplib', secret);
 
     document.querySelector('.otp-secret').innerHTML = secret;
 
+    // lib QRcode utilizada para criar e exibir a imagem do QR Code gerado
     QRCode.toDataURL(otpauth, function(err, url) {
       var container = document.querySelector('.otp-qrcode .qrcode');
       if (err) {
@@ -72,10 +80,12 @@ a serem utilizados pela página a ser exibida no navegador:
     });
   }
 
+  // seta o token gerado na tela
   function setToken(token) {
     document.querySelector('.otp-token').innerHTML = token;
   }
 
+  // função para controlar o tempo de exibição do token na tela
   function generator() {
     if (!secret) {
       window.clearInterval(timing);
@@ -84,6 +94,7 @@ a serem utilizados pela página a ser exibida no navegador:
 
     const remaining = otplib.authenticator.timeRemaining();
     if (otplib.authenticator.timeUsed() === 0) {
+      // e o tempo do token espirar é gerado um novo
       setToken(otplib.authenticator.generate(secret));
     }
 
@@ -91,20 +102,25 @@ a serem utilizados pela página a ser exibida no navegador:
     document.querySelector('.otp-countdown').innerHTML = remaining + 's';
   }
 
+  // função que contabiliza o tempo de vida do token
   function startCountdown() {
     window.setTimeout(() => {
       if (secret) {
+        // se existir a chave é gerado um novo token
         setToken(otplib.authenticator.generate(secret));
       }
       timing = window.setInterval(generator, 1000);
     }, 2000);
   }
 
+  // função que verifica e valida o token e a chave
   function initVerify() {
     document
       .querySelector('.otp-verify-send')
       .addEventListener('click', function() {
         var inputValue = document.querySelector('.otp-verify-input').value;
+        
+        // verifica o token fornecido em relação ao token gerado
         var delta = otplib.authenticator.checkDelta(inputValue, secret);
 
         var text = document.querySelector('.otp-verify-result .text');
