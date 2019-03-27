@@ -173,4 +173,7 @@ QRCode.js suporta Cross-browser com HTML5 Canvas e table tag no DOM. QRCode.js n
  
         https://github.com/speakeasyjs/speakeasy 
         
+ - **Java GoogleAuth**
+        
+        https://github.com/wstrange/GoogleAuth
 
