@@ -94,7 +94,7 @@ a serem utilizados pela página a ser exibida no navegador:
 
     const remaining = otplib.authenticator.timeRemaining();
     if (otplib.authenticator.timeUsed() === 0) {
-      // e o tempo do token espirar é gerado um novo
+      // é o tempo do token expirar é gerado um novo
       setToken(otplib.authenticator.generate(secret));
     }
 
