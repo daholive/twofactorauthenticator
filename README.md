@@ -155,3 +155,10 @@ a serem utilizados pela página a ser exibida no navegador:
 })();
 
 ```
+
+
+### Bilioteca utilizada para gerar e exibir o QR Code ###
+
+Existe uma versão compilada para ser usada direta com o navegador. É necessário adicionar o seguinte script ao seu código:
+
+    <script src="js/qrcode.min.js"></script>
