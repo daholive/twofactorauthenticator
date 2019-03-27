@@ -177,3 +177,6 @@ QRCode.js suporta Cross-browser com HTML5 Canvas e table tag no DOM. QRCode.js n
         
         https://github.com/wstrange/GoogleAuth
 
+- **Java Spring Two Factor Auth**
+
+        https://www.baeldung.com/spring-security-two-factor-authentication-with-soft-token
