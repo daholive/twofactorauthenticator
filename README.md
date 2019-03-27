@@ -15,6 +15,7 @@ Foi utilizado neste experimento a biblioteca javascript chamada otplib:
  
 ### Como funciona? ###
 
+![alt text](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela1.png)
 
 
 ### Utilização via browser ###
