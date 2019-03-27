@@ -34,7 +34,10 @@ a serem utilizados pela página a ser exibida no navegador:
   var timing;
  console.log('iniciou');
   otplib.authenticator.options = {
-    window: 1, // 0 identifica o token atual; 1 para o token futuro (pego através do app google authenticator); -1 para o token anterior
+    // 0 identifica o token atual;
+    // 1 para o token futuro (pego através do app google authenticator);
+    // -1 para o token anterior
+    window: 1, 
     step: 30 // tempo de duração do Token gerado
   };
 
