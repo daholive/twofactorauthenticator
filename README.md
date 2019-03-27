@@ -23,6 +23,10 @@ Na tela seguinte, é exibido um token gerado também automaticamente e com um te
 
 ![Token gerado automaticamente](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela2.png)
 
+Na última tela, é feita a validação do Token. A cada validação, uma "flag" informando o status do token.
+
+![Validação do Token](https://github.com/daholive/twofactorauthenticator/blob/master/docs/tela3.png)
+
 
 ### Utilização via browser ###
 
